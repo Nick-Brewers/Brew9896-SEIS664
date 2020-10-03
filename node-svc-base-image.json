@@ -2,8 +2,8 @@
   "builders": [
     {
       "type": "googlecompute",
-      "project_id": "YOUR PROJECT HERE. YOU MUST CHANGE THIS",
-      "zone": "us-central1-c",
+      "project_id": "woven-century-203321",
+      "zone": "us-central1-a",
       "machine_type": "f1-micro",
       "source_image_family": "ubuntu-minimal-2004-lts",
       "image_name": "node-svc-base-{{isotime \"2006-01-02-15-04-05\"}}",

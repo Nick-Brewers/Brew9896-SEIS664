@@ -1,5 +1,5 @@
-resource "google_compute_instance" "node-svc-01" {
-  name         = "node-svc-01"
+resource "google_compute_instance" "node-svc-02" {
+  name         = "node-svc-02"
   machine_type = "f1-micro"
   zone         = "us-central1-c"
 
@@ -17,7 +17,7 @@ resource "google_compute_instance" "node-svc-01" {
   }
 }
 
-resource "google_compute_project_metadata" "node-svc-01" {
+resource "google_compute_project_metadata" "node-svc-02" {
   metadata = {
     ssh-keys = "node-user:${file("~/.ssh/node-user.pub")}" // path to ssh key file
   }
